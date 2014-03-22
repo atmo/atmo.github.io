@@ -15,7 +15,7 @@ var S;
 var sourcesCount, maximumSources = 25;
 var interval = 50;
 
-var running = true;
+var running = false;
 
 function init() {
 	canvas = document.getElementById('canvas');
