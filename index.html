@@ -31,11 +31,20 @@
         <h3>Interference simulation</h3>
             <canvas id="canvas" width="700" height="700" >
             </canvas>
-            <div class="info">
-            <label for="select"> Number of sources: </label>
-            <select id="select" onchange="changeSources()"/>
+            <div class="settings_all">
+              <div class="settings">
+              <label> Number of sources: 
+              <select id="select" onchange="changeSources()" style="display: inline-block;"> </select> </label>
+              </div>
+              <div class="settings">
+               <label> Show sources:  
+                <input id="checkbox" type="checkbox" checked onclick="setShowSources()" /></label>
+              </div>
+              <div class="settings">
+                <input type="button" id="runButton" value="Pause" onclick="toggleRunning()" style="width:60px;" />
+              </div>
             </div>
-            </select>
+            
       </section>
     </div>
 
