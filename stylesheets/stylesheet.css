@@ -5,7 +5,7 @@ by Jason Costello, @jsncostello
 
 @import url(pygment_trac.css);
 
-/*******************************************************************************
+/******************************************************************************
 MeyerWeb Reset
 *******************************************************************************/
 
@@ -29,7 +29,7 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
- /* HTML5 display-role reset for older browsers */
+/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -277,6 +277,7 @@ Full-Width Styles
   display: inline-block;
   margin-left: 0;
   margin-right: 0;
+  text-align: center;
 }
 
 #forkme_banner {
