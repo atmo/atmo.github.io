@@ -29,21 +29,17 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3>Interference simulation</h3>
-            <canvas id="canvas" width="700" height="700" >
-            </canvas>
-            <div class="settings_all">
+            <div id="settings">
+              <canvas id="canvas">
+              </canvas>
+            </div>
               <div class="settings">
               <label> Number of sources: 
               <select id="select" onchange="setSources()" style="display: inline-block;"> </select> </label>
-              </div>
-              <div class="settings">
-               <label> Show sources:
+              <label> Show sources:
                 <input id="checkbox" type="checkbox" checked onclick="setShowSources()" /></label>
-              </div>
-              <div class="settings">
                 <input type="button" id="runButton" value="Pause" onclick="toggleRunning()" style="width:60px;" />
               </div>
-            </div>
             
       </section>
     </div>
