@@ -114,16 +114,6 @@ footer a {
 Full-Width Styles
 *******************************************************************************/
 
-input.src_inp {
-  width: 20px;
-}
-
-
-.div_src_inp {
-  float:left;
-  clear:left;
-}
-
 .outer {
   width: 100%;
 }
@@ -132,6 +122,7 @@ input.src_inp {
   position: relative;
   margin: 0 auto;
   text-align: center;
+
 }
 
 .settings {
@@ -139,14 +130,33 @@ input.src_inp {
   text-align: center;
 }
 
+.columns {
+   margin: 0 auto;
+   width: 600px;
+}
+
 .left_column {
    float:left;
    display: inline-block;
    margin: 10px;
 }
+
 .right_column {
    float:left;
    margin: 10px;
+}
+
+#end {
+  clear: both;
+}
+
+input.src_inp {
+  width: 20px;
+}
+
+.div_src_inp {
+  float:left;
+  clear:left;
 }
 
 #forkme_banner {

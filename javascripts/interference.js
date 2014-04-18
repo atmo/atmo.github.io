@@ -135,11 +135,11 @@ function setShowSources() {
 function setInputs (sourcesCount) {
 	var column = document.getElementById('rc');
 	for (var i = maxSourcesCount-1; i >= sourcesCount; i--) {
-		column.childNodes[i+1].style.display = "none";
+		column.childNodes[i].style.display = "none";
 	}
 	for (var i = sourcesCount-1; i >= 0; i--) {
-		column.childNodes[i+1].style.display = "inline";
-		column.childNodes[i+1].childNodes[0].value = sources[i].period;
+		column.childNodes[i].style.display = "inline";
+		column.childNodes[i].childNodes[0].value = sources[i].period;
 	}
 }
 
