@@ -108,9 +108,21 @@ footer a {
   text-decoration: underline;
 }
 
+
+
 /*******************************************************************************
 Full-Width Styles
 *******************************************************************************/
+
+input.src_inp {
+  width: 20px;
+}
+
+
+.div_src_inp {
+  float:left;
+  clear:left;
+}
 
 .outer {
   width: 100%;
@@ -125,6 +137,16 @@ Full-Width Styles
 .settings {
   display: inline-block;
   text-align: center;
+}
+
+.left_column {
+   float:left;
+   display: inline-block;
+   margin: 10px;
+}
+.right_column {
+   float:left;
+   margin: 10px;
 }
 
 #forkme_banner {
