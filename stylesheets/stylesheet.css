@@ -125,38 +125,9 @@ Full-Width Styles
 
 }
 
-.settings {
-  display: inline-block;
-  text-align: center;
-}
-
-.columns {
-   margin: 0 auto;
-   width: 600px;
-}
-
-.left_column {
-   float:left;
-   display: inline-block;
-   margin: 10px;
-}
-
-.right_column {
-   float:left;
-   margin: 10px;
-}
-
-#end {
-  clear: both;
-}
-
-input.src_inp {
-  width: 20px;
-}
-
-.div_src_inp {
-  float:left;
-  clear:left;
+#projects {
+    font-size: 30px;
+    height: 600px;/
 }
 
 #forkme_banner {
