@@ -16,20 +16,14 @@ input.phase_input {
   width: 30px;
 }
 
-.inner {
-  position: relative;
-  margin: 0 auto;
-  text-align: center;
-}
-
 #settings {
   display: inline-block;
   text-align: center;
 }
 
 #columns {
-  margin: 0 auto;
   display: inline-block;
+  text-align: center;
 }
 
 #canvas_column {

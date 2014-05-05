@@ -1,5 +1,5 @@
 var canvas, context;
-var size = 500;
+var size = 700;
 var height = size, width = size;
 var center = new Vector(Math.floor(width/2), Math.floor(height/2));
 
