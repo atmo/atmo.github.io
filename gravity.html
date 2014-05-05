@@ -30,10 +30,25 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3>Simulation of gravitational interaction between small bodies</h3>
-              <div id="canvas_container">
+        <div>
+            <div id="canvas_container">
                 <canvas id="canvas">
                 </canvas>
-              </div>
+            </div>
+        </div>
+        <div class="settings">
+          <label> Show traces:
+            <input id="traces" type="checkbox" onclick="setShowTraces()" />
+          </label>
+          <label> Bounce:
+            <input id="bounce" type="checkbox" checked onclick="setBounce()" />
+          </label>
+          <label> Bodies count:
+            <input class="bc" type="number" onchange="onBodiesCountChanged(this.value)" />
+          </label>
+          <input type="button" id="runButton" value="Pause" onclick="toggleRunning()" style="width:60px;" />
+          <input type="button" id="restartButton" value="Restart" onclick="restart()" style="width:60px;" />
+        </div>
       </section>
     </div>
 
