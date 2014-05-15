@@ -4,6 +4,10 @@
   margin: 5px;
 }
 
+#canvas {
+    margin-bottom: -8px;
+}
+
 .settings {
   display: inline-block;
   text-align: center;
