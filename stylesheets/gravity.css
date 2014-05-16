@@ -1,11 +1,12 @@
 #canvas_container {
   border: 1px solid black;
   display: inline-block;
-  margin: 5px;
 }
 
-#canvas {
-    margin-bottom: -8px;
+.inner {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .settings {
@@ -13,6 +14,6 @@
   text-align: center;
 }
 
-input.bc {
+#bodies_count {
   width: 40px;
 }
