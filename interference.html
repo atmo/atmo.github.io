@@ -1,48 +1,73 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset='utf-8' />
   <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-  <meta name="description" content="Interference javascript simulation : " />
+  <meta name="description" content="atmo.github.io : " />
 
-  <link rel="stylesheet" type="text/css" media="screen" href="interference.css">
-  <script language='javascript' src='interference.js'></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/interference.css">
 
-  <title>Interference</title>
+  <script language="javascript" src='javascripts/interference.js'>
+  </script>
+  <title>atmo.github.io</title>
 </head>
-<body onload="init();">
-  <h3>Interference simulation</h3>
-  <div class="inner">
-    <div id="columns">
-      <div id="canvas_column">
-        <div>
-          <canvas id="canvas">
-          </canvas>
-        </div>
-        <div id="settings">
-          <label> Number of sources:
-            <select id="select" onchange="setSources()">
-            </select>
-          </label>
-          <label> Show sources:
-            <input id="checkbox" type="checkbox" checked onclick="setShowSources()" />
-          </label>
-          <input type="button" id="runButton" value="Pause" onclick="toggleRunning()" />
-        </div>
-      </div>
-      <div id="periods_column">
-        <div>
-          Periods:
-        </div>
-        <div id="periods"></div>
-      </div>
-      <div id="phases_column">
-        <div>
-          Phases:
-        </div>
-        <div id="phases"></div>
-      </div>
-    </div>
+
+<body onload='init()'>
+  <!-- HEADER -->
+  <div id="header_wrap" class="outer">
+    <header class="inner">
+      <a id="forkme_banner" href="https://github.com/atmo">View on GitHub</a>
+
+      <h1 id="project_title">atmo.github.io</h1>
+      <h2 id="project_tagline"></h2>
+
+    </header>
   </div>
-</body>
-</html>
+
+  <!-- MAIN CONTENT -->
+  <div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+      <h3>Interference simulation</h3>
+      <div id="columns">
+        <div id="canvas_column">
+          <div>
+            <canvas id="canvas">
+            </canvas>
+          </div>
+          <div id="settings">
+            <label> Number of sources:
+              <select id="select" onchange="setSources()"> </select>
+            </label>
+          </div>
+          <div id="settings">
+            <label> Show sources:
+              <input id="checkbox" type="checkbox" checked onclick="setShowSources()" /></label>
+              <input type="button" id="runButton" value="Pause" onclick="toggleRunning()"/>
+            </div>
+          </div>
+          <div id="periods_column">
+            <div>
+              Periods:
+            </div>
+            <div id="periods"></div>
+          </div>
+          <div id="phases_column">
+            <div>
+              Phases:
+            </div>
+            <div id="phases"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+  </body>
+  </html>
